@@ -1,50 +1,100 @@
 # Bandit--linux-game
 
 ## level 0
-  ssh bandit0@bandit.labs.overthewire.org -p 2220
-  
-  password - bandit0
 
-## level  0-1
-  ssh bandit1@bandit.labs.overthewire.org -p 2220
-  
-  password - 6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR
-  
-  cat readme 
+```bash
+ssh bandit0@bandit.labs.overthewire.org -p 2220
 
+password - bandit0
+```
 
-## level  1-2
-   ssh bandit2@bandit.labs.overthewire.org -p 2220
-  
-  cat ./-   to read files start with - need add ./ before filename 
-  
-  password - PK8fYLZg2hnHSz83plBL1iEPKdD3QToB
+---
 
+## level 0-1
 
-  ## level  2-3
-   ssh bandit3@bandit.labs.overthewire.org -p 2220
-  
-  cat ./--spaces\ in\ this\ filename--     -->to eliminate space or ant special caharter use \
-  
-  password - 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
+```bash
+ssh bandit1@bandit.labs.overthewire.org -p 2220
 
-   ## level  3-4
-   ssh bandit4@bandit.labs.overthewire.org -p 2220
-  
-  cat ...Hiding-From-You --> to read hiden fieles use cat .filename
-  
-  password - xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
+password - 6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR
 
+cat readme
+```
 
-  ## level  4-5
-   ssh bandit5@bandit.labs.overthewire.org -p 2220
-           1. Navigate to the folder
-         cd inhere
-         2. Find the only 'ASCII text' file among the binary 'data' files
-          file ./*
-         3. Read that specific file (./ prefix prevents dash '-' from acting as a command flag)
-          cat ./-fileX
-        Note: If terminal text glitches from viewing binary data, type: reset  
-     password - xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
+---
 
-  
+## level 1-2
+
+```bash
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+
+cat ./-
+```
+
+**Note:**
+> To read files starting with `-`, add `./` before the filename.
+
+```text
+password - PK8fYLZg2hnHSz83plBL1iEPKdD3QToB
+```
+
+---
+
+## level 2-3
+
+```bash
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+
+cat ./--spaces\ in\ this\ filename--
+```
+
+**Note:**
+> To handle spaces or special characters in filenames, use `\` before each space.
+
+```text
+password - 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
+```
+
+---
+
+## level 3-4
+
+```bash
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+
+cat ...Hiding-From-You
+```
+
+**Note:**
+> To read hidden files, use `cat .filename`.
+
+```text
+password - xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
+```
+
+---
+
+## level 4-5
+
+```bash
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+
+cd inhere
+
+file ./*
+
+cat ./-fileX
+```
+
+**Note:**
+- Navigate to the `inhere` directory.
+- Use `file ./*` to find the only ASCII text file.
+- Read that file using `cat ./-fileX`.
+- If the terminal becomes unreadable after opening binary files, run:
+
+```bash
+reset
+```
+
+```text
+password - 6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG
+```
