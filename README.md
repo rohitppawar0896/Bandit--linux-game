@@ -113,4 +113,19 @@ find . -type f -size 1033c ! -executable
 password - pXa26xhMWaC2SvDotA4r9EgZkulOeSBW
 ```
 
+## level 6-7
 
+```bash
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+
+find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+
+cat /var/lib/dpkg/info/bandit7.password
+```
+
+**Note:**
+> Search the entire system for a regular file (`-type f`) owned by **bandit7**, belonging to **group bandit6**, and exactly **33 bytes**. `2>/dev/null` hides permission denied errors.
+
+```text
+password - Bmnnvf82KzQlfxgAI2d1zYbr1u9pr3E3
+```
