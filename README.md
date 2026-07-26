@@ -31,7 +31,20 @@
    ## level  3-4
    ssh bandit4@bandit.labs.overthewire.org -p 2220
   
-  cat ...Hiding-From-You --> to read hiden fieles use cat .filename  
+  cat ...Hiding-From-You --> to read hiden fieles use cat .filename
+  
   password - xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
+
+
+  ## level  4-5
+   ssh bandit5@bandit.labs.overthewire.org -p 2220
+           1. Navigate to the folder
+         cd inhere
+         2. Find the only 'ASCII text' file among the binary 'data' files
+          file ./*
+         3. Read that specific file (./ prefix prevents dash '-' from acting as a command flag)
+          cat ./-fileX
+        Note: If terminal text glitches from viewing binary data, type: reset  
+     password - xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
 
   
