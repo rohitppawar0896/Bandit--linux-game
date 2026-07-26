@@ -1,13 +1,31 @@
 # Bandit--linux-game
 
-## level 0-1
+## level 0
   ssh bandit0@bandit.labs.overthewire.org -p 2220
   
   password - bandit0
 
-## level  1-2
+## level  0-1
   ssh bandit1@bandit.labs.overthewire.org -p 2220
   
   password - 6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR
   
-  cat readme
+  cat readme 
+
+
+## level  1-2
+   ssh bandit2@bandit.labs.overthewire.org -p 2220
+  
+  cat ./-   to read files start with - need add ./ before filename 
+  
+  password - PK8fYLZg2hnHSz83plBL1iEPKdD3QToB
+
+
+  ## level  2-3
+   ssh bandit3@bandit.labs.overthewire.org -p 2220
+  
+  cat ./--spaces\ in\ this\ filename--     -->to eliminate space or ant special caharter use \
+  
+  password - 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
+
+  
