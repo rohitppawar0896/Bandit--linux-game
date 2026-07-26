@@ -28,4 +28,10 @@
   
   password - 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
 
+   ## level  3-4
+   ssh bandit4@bandit.labs.overthewire.org -p 2220
+  
+  cat ...Hiding-From-You --> to read hiden fieles use cat .filename  
+  password - xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
+
   
