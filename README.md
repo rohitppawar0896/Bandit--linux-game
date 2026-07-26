@@ -98,3 +98,19 @@ reset
 ```text
 password - 6C7h9GD8M6ai5nr7wo1RonrzFjj9yIrG
 ```
+
+## level 5-6
+
+```bash
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+
+find . -type f -size 1033c ! -executable
+```
+**Note:**
+> Find a regular file (`-type f`) that is exactly **1033 bytes** (`-size 1033c`) and **not executable** (`! -executable`).
+
+```text
+password - pXa26xhMWaC2SvDotA4r9EgZkulOeSBW
+```
+
+
